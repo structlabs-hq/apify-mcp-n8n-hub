@@ -1,0 +1,20 @@
+{
+  "fast-contact-lead-extractor": {
+    "actor": "structlabs/fast-contact-lead-extractor",
+    "workflow": "https://github.com/structlabs-hq/fast-contact-lead-extractor-n8n-mcp/blob/main/n8n/fast-contact-lead-extractor-workflow.json",
+    "repo": "https://github.com/structlabs-hq/fast-contact-lead-extractor-n8n-mcp",
+    "store": "https://apify.com/structlabs/fast-contact-lead-extractor"
+  },
+  "live-ats-jobs-api": {
+    "actor": "structlabs/live-ats-jobs-api",
+    "workflow": "https://github.com/structlabs-hq/live-ats-jobs-api-n8n-mcp/blob/main/n8n/live-ats-jobs-api-workflow.json",
+    "repo": "https://github.com/structlabs-hq/live-ats-jobs-api-n8n-mcp",
+    "store": "https://apify.com/structlabs/live-ats-jobs-api"
+  },
+  "seek-jobs-salary-api": {
+    "actor": "structlabs/seek-jobs-salary-api",
+    "workflow": "https://github.com/structlabs-hq/seek-jobs-salary-api-n8n-mcp/blob/main/n8n/seek-jobs-salary-api-workflow.json",
+    "repo": "https://github.com/structlabs-hq/seek-jobs-salary-api-n8n-mcp",
+    "store": "https://apify.com/structlabs/seek-jobs-salary-api"
+  }
+}
