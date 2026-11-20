@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "apify-structlabs": {
+      "url": "https://mcp.apify.com/?actors=structlabs/fast-contact-lead-extractor,structlabs/live-ats-jobs-api,structlabs/seek-jobs-salary-api"
+    }
+  }
+}
