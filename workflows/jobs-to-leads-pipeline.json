@@ -1,0 +1,148 @@
+{
+  "name": "Live ATS jobs \u2192 Fast Contact leads",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 24
+            }
+          ]
+        }
+      },
+      "id": "c1000000-0000-4000-8000-000000000001",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/structlabs~live-ats-jobs-api/run-sync-get-dataset-items",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{$env.APIFY_TOKEN}}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"queries\": [\"AI Engineer\"],\n  \"remoteOnly\": false,\n  \"providers\": [\"greenhouse\", \"ashby\", \"lever\", \"bamboohr\"],\n  \"maxCompanies\": 20,\n  \"maxJobs\": 10\n}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "c1000000-0000-4000-8000-000000000002",
+      "name": "Search ATS jobs",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const seen = new Set();\nconst domains = [];\nfor (const item of items) {\n  const slug = item.json.company_slug;\n  if (!slug) continue;\n  const d = `https://${slug}.com`;\n  if (seen.has(d)) continue;\n  seen.add(d);\n  domains.push(d);\n  if (domains.length >= 10) break;\n}\nreturn [{ json: { domains } }];"
+      },
+      "id": "c1000000-0000-4000-8000-000000000003",
+      "name": "Unique company domains",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/structlabs~fast-contact-lead-extractor/run-sync-get-dataset-items",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{$env.APIFY_TOKEN}}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ startUrls: $json.domains, maxPagesPerDomain: 1, maxDecisionMakers: 3 }) }}",
+        "options": {
+          "timeout": 600000
+        }
+      },
+      "id": "c1000000-0000-4000-8000-000000000004",
+      "name": "Enrich company leads",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        720,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Search ATS jobs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search ATS jobs": {
+      "main": [
+        [
+          {
+            "node": "Unique company domains",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Unique company domains": {
+      "main": [
+        [
+          {
+            "node": "Enrich company leads",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "d1000000-0000-4000-8000-000000000001",
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}
