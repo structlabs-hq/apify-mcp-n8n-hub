@@ -16,5 +16,11 @@
     "workflow": "https://github.com/structlabs-hq/seek-jobs-salary-api-n8n-mcp/blob/main/n8n/seek-jobs-salary-api-workflow.json",
     "repo": "https://github.com/structlabs-hq/seek-jobs-salary-api-n8n-mcp",
     "store": "https://apify.com/structlabs/seek-jobs-salary-api"
+  },
+  "aliexpress-search-price-tracker": {
+    "actor": "structlabs/aliexpress-search-price-tracker",
+    "workflow": "https://github.com/structlabs-hq/aliexpress-search-price-tracker-n8n-mcp/blob/main/n8n/aliexpress-search-price-tracker-workflow.json",
+    "repo": "https://github.com/structlabs-hq/aliexpress-search-price-tracker-n8n-mcp",
+    "store": "https://apify.com/structlabs/aliexpress-search-price-tracker"
   }
 }
