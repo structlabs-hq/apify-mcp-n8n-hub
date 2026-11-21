@@ -43,3 +43,9 @@ Import any workflow from a companion repo, set `APIFY_TOKEN` in the n8n environm
 ## License
 
 MIT
+
+## Combined workflows
+
+Apify-only chains that run two structlabs Actors in one n8n flow, with no external paid services:
+
+- [jobs-to-leads-pipeline.json](workflows/jobs-to-leads-pipeline.json) — Live ATS Jobs API → inferred company domains → Fast Contact lead extractor.
