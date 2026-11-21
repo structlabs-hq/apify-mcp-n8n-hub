@@ -22,5 +22,11 @@
     "workflow": "https://github.com/structlabs-hq/aliexpress-search-price-tracker-n8n-mcp/blob/main/n8n/aliexpress-search-price-tracker-workflow.json",
     "repo": "https://github.com/structlabs-hq/aliexpress-search-price-tracker-n8n-mcp",
     "store": "https://apify.com/structlabs/aliexpress-search-price-tracker"
+  },
+  "zillow-zip-market-scraper": {
+    "actor": "structlabs/zillow-zip-market-scraper",
+    "workflow": "https://github.com/structlabs-hq/zillow-zip-market-scraper-n8n-mcp/blob/main/n8n/zillow-zip-market-scraper-workflow.json",
+    "repo": "https://github.com/structlabs-hq/zillow-zip-market-scraper-n8n-mcp",
+    "store": "https://apify.com/structlabs/zillow-zip-market-scraper"
   }
 }
