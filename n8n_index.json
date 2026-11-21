@@ -28,5 +28,15 @@
     "workflow": "https://github.com/structlabs-hq/zillow-zip-market-scraper-n8n-mcp/blob/main/n8n/zillow-zip-market-scraper-workflow.json",
     "repo": "https://github.com/structlabs-hq/zillow-zip-market-scraper-n8n-mcp",
     "store": "https://apify.com/structlabs/zillow-zip-market-scraper"
+  },
+  "workflows": {
+    "jobs-to-leads-pipeline": {
+      "title": "Live ATS jobs to Fast Contact leads",
+      "path": "workflows/jobs-to-leads-pipeline.json",
+      "uses": [
+        "structlabs/live-ats-jobs-api",
+        "structlabs/fast-contact-lead-extractor"
+      ]
+    }
   }
 }
