@@ -29,6 +29,18 @@
     "repo": "https://github.com/structlabs-hq/zillow-zip-market-scraper-n8n-mcp",
     "store": "https://apify.com/structlabs/zillow-zip-market-scraper"
   },
+  "google-ads-transparency-api": {
+    "actor": "structlabs/google-ads-transparency-api",
+    "workflow": "https://github.com/structlabs-hq/google-ads-transparency-api-n8n-mcp/blob/main/n8n/google-ads-transparency-api-workflow.json",
+    "repo": "https://github.com/structlabs-hq/google-ads-transparency-api-n8n-mcp",
+    "store": "https://apify.com/structlabs/google-ads-transparency-api"
+  },
+  "flashscore-tennis-stats-api": {
+    "actor": "structlabs/flashscore-tennis-stats-api",
+    "workflow": "https://github.com/structlabs-hq/flashscore-tennis-stats-api-n8n-mcp/blob/main/n8n/flashscore-tennis-stats-api-workflow.json",
+    "repo": "https://github.com/structlabs-hq/flashscore-tennis-stats-api-n8n-mcp",
+    "store": "https://apify.com/structlabs/flashscore-tennis-stats-api"
+  },
   "workflows": {
     "jobs-to-leads-pipeline": {
       "title": "Live ATS jobs to Fast Contact leads",
