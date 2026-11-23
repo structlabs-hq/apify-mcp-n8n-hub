@@ -11,6 +11,8 @@ Production-ready [Apify](https://apify.com/structlabs) Actors packaged as n8n wo
 | [SEEK Jobs Salary API (AU + NZ)](https://github.com/structlabs-hq/seek-jobs-salary-api-n8n-mcp) | [Store](https://apify.com/structlabs/seek-jobs-salary-api) | [workflow](https://github.com/structlabs-hq/seek-jobs-salary-api-n8n-mcp/blob/main/n8n/seek-jobs-salary-api-workflow.json) | `structlabs/seek-jobs-salary-api` |
 | [AliExpress Search Price Tracker](https://github.com/structlabs-hq/aliexpress-search-price-tracker-n8n-mcp) | [Store](https://apify.com/structlabs/aliexpress-search-price-tracker) | [workflow](https://github.com/structlabs-hq/aliexpress-search-price-tracker-n8n-mcp/blob/main/n8n/aliexpress-search-price-tracker-workflow.json) | `structlabs/aliexpress-search-price-tracker` |
 | [Zillow ZIP Market Scraper](https://github.com/structlabs-hq/zillow-zip-market-scraper-n8n-mcp) | [Store](https://apify.com/structlabs/zillow-zip-market-scraper) | [workflow](https://github.com/structlabs-hq/zillow-zip-market-scraper-n8n-mcp/blob/main/n8n/zillow-zip-market-scraper-workflow.json) | `structlabs/zillow-zip-market-scraper` |
+| [Google Ads Transparency API](https://github.com/structlabs-hq/google-ads-transparency-api-n8n-mcp) | [Store](https://apify.com/structlabs/google-ads-transparency-api) | [workflow](https://github.com/structlabs-hq/google-ads-transparency-api-n8n-mcp/blob/main/n8n/google-ads-transparency-api-workflow.json) | `structlabs/google-ads-transparency-api` |
+| [Flashscore Tennis Stats API](https://github.com/structlabs-hq/flashscore-tennis-stats-api-n8n-mcp) | [Store](https://apify.com/structlabs/flashscore-tennis-stats-api) | [workflow](https://github.com/structlabs-hq/flashscore-tennis-stats-api-n8n-mcp/blob/main/n8n/flashscore-tennis-stats-api-workflow.json) | `structlabs/flashscore-tennis-stats-api` |
 
 ## Install all three in one MCP client
 
@@ -39,6 +41,8 @@ Import any workflow from a companion repo, set `APIFY_TOKEN` in the n8n environm
 - [seek-jobs-salary-api-n8n-mcp](https://github.com/structlabs-hq/seek-jobs-salary-api-n8n-mcp) — SEEK AU/NZ jobs with salary data
 - [aliexpress-search-price-tracker-n8n-mcp](https://github.com/structlabs-hq/aliexpress-search-price-tracker-n8n-mcp) — AliExpress search results with numeric price, discount and sold count
 - [zillow-zip-market-scraper-n8n-mcp](https://github.com/structlabs-hq/zillow-zip-market-scraper-n8n-mcp) — Zillow listings by ZIP or city with Zestimate and rent Zestimate
+- [google-ads-transparency-api-n8n-mcp](https://github.com/structlabs-hq/google-ads-transparency-api-n8n-mcp) — Google Ads Transparency creatives with format, dates and preview
+- [flashscore-tennis-stats-api-n8n-mcp](https://github.com/structlabs-hq/flashscore-tennis-stats-api-n8n-mcp) — Flashscore tennis results with per-set and match stats
 
 ## License
 
