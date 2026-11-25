@@ -50,5 +50,17 @@
         "structlabs/fast-contact-lead-extractor"
       ]
     }
+  },
+  "producthunt-launch-intelligence-api": {
+    "actor": "structlabs/producthunt-launch-intelligence-api",
+    "workflow": "https://github.com/structlabs-hq/producthunt-launch-intelligence-api-n8n-mcp/blob/main/n8n/producthunt-launch-intelligence-api-workflow.json",
+    "repo": "https://github.com/structlabs-hq/producthunt-launch-intelligence-api-n8n-mcp",
+    "store": "https://apify.com/structlabs/producthunt-launch-intelligence-api"
+  },
+  "twitch-live-stream-analytics-api": {
+    "actor": "structlabs/twitch-live-stream-analytics-api",
+    "workflow": "https://github.com/structlabs-hq/twitch-live-stream-analytics-api-n8n-mcp/blob/main/n8n/twitch-live-stream-analytics-api-workflow.json",
+    "repo": "https://github.com/structlabs-hq/twitch-live-stream-analytics-api-n8n-mcp",
+    "store": "https://apify.com/structlabs/twitch-live-stream-analytics-api"
   }
 }

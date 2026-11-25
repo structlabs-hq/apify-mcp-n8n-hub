@@ -13,6 +13,8 @@ Production-ready [Apify](https://apify.com/structlabs) Actors packaged as n8n wo
 | [Zillow ZIP Market Scraper](https://github.com/structlabs-hq/zillow-zip-market-scraper-n8n-mcp) | [Store](https://apify.com/structlabs/zillow-zip-market-scraper) | [workflow](https://github.com/structlabs-hq/zillow-zip-market-scraper-n8n-mcp/blob/main/n8n/zillow-zip-market-scraper-workflow.json) | `structlabs/zillow-zip-market-scraper` |
 | [Google Ads Transparency API](https://github.com/structlabs-hq/google-ads-transparency-api-n8n-mcp) | [Store](https://apify.com/structlabs/google-ads-transparency-api) | [workflow](https://github.com/structlabs-hq/google-ads-transparency-api-n8n-mcp/blob/main/n8n/google-ads-transparency-api-workflow.json) | `structlabs/google-ads-transparency-api` |
 | [Flashscore Tennis Stats API](https://github.com/structlabs-hq/flashscore-tennis-stats-api-n8n-mcp) | [Store](https://apify.com/structlabs/flashscore-tennis-stats-api) | [workflow](https://github.com/structlabs-hq/flashscore-tennis-stats-api-n8n-mcp/blob/main/n8n/flashscore-tennis-stats-api-workflow.json) | `structlabs/flashscore-tennis-stats-api` |
+| [Product Hunt Launch Intelligence API](https://github.com/structlabs-hq/producthunt-launch-intelligence-api-n8n-mcp) | [Store](https://apify.com/structlabs/producthunt-launch-intelligence-api) | [workflow](https://github.com/structlabs-hq/producthunt-launch-intelligence-api-n8n-mcp/blob/main/n8n/producthunt-launch-intelligence-api-workflow.json) | `structlabs/producthunt-launch-intelligence-api` |
+| [Twitch Live Stream Analytics API](https://github.com/structlabs-hq/twitch-live-stream-analytics-api-n8n-mcp) | [Store](https://apify.com/structlabs/twitch-live-stream-analytics-api) | [workflow](https://github.com/structlabs-hq/twitch-live-stream-analytics-api-n8n-mcp/blob/main/n8n/twitch-live-stream-analytics-api-workflow.json) | `structlabs/twitch-live-stream-analytics-api` |
 
 ## Install all three in one MCP client
 
@@ -43,6 +45,8 @@ Import any workflow from a companion repo, set `APIFY_TOKEN` in the n8n environm
 - [zillow-zip-market-scraper-n8n-mcp](https://github.com/structlabs-hq/zillow-zip-market-scraper-n8n-mcp) — Zillow listings by ZIP or city with Zestimate and rent Zestimate
 - [google-ads-transparency-api-n8n-mcp](https://github.com/structlabs-hq/google-ads-transparency-api-n8n-mcp) — Google Ads Transparency creatives with format, dates and preview
 - [flashscore-tennis-stats-api-n8n-mcp](https://github.com/structlabs-hq/flashscore-tennis-stats-api-n8n-mcp) — Flashscore tennis results with per-set and match stats
+- [producthunt-launch-intelligence-api-n8n-mcp](https://github.com/structlabs-hq/producthunt-launch-intelligence-api-n8n-mcp) — Product Hunt rows with n8n workflow and MCP config
+- [twitch-live-stream-analytics-api-n8n-mcp](https://github.com/structlabs-hq/twitch-live-stream-analytics-api-n8n-mcp) — Twitch rows with n8n workflow and MCP config
 
 ## License
 
