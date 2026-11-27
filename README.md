@@ -15,6 +15,7 @@ Production-ready [Apify](https://apify.com/structlabs) Actors packaged as n8n wo
 | [Flashscore Tennis Stats API](https://github.com/structlabs-hq/flashscore-tennis-stats-api-n8n-mcp) | [Store](https://apify.com/structlabs/flashscore-tennis-stats-api) | [workflow](https://github.com/structlabs-hq/flashscore-tennis-stats-api-n8n-mcp/blob/main/n8n/flashscore-tennis-stats-api-workflow.json) | `structlabs/flashscore-tennis-stats-api` |
 | [Product Hunt Launch Intelligence API](https://github.com/structlabs-hq/producthunt-launch-intelligence-api-n8n-mcp) | [Store](https://apify.com/structlabs/producthunt-launch-intelligence-api) | [workflow](https://github.com/structlabs-hq/producthunt-launch-intelligence-api-n8n-mcp/blob/main/n8n/producthunt-launch-intelligence-api-workflow.json) | `structlabs/producthunt-launch-intelligence-api` |
 | [Twitch Live Stream Analytics API](https://github.com/structlabs-hq/twitch-live-stream-analytics-api-n8n-mcp) | [Store](https://apify.com/structlabs/twitch-live-stream-analytics-api) | [workflow](https://github.com/structlabs-hq/twitch-live-stream-analytics-api-n8n-mcp/blob/main/n8n/twitch-live-stream-analytics-api-workflow.json) | `structlabs/twitch-live-stream-analytics-api` |
+| [Job Posting Enrichment API](https://github.com/structlabs-hq/job-posting-enrichment-api-n8n-mcp) | [Store](https://apify.com/structlabs/job-posting-enrichment-api) | [workflow](https://github.com/structlabs-hq/job-posting-enrichment-api-n8n-mcp/blob/main/n8n/job-posting-enrichment-api-workflow.json) | `structlabs/job-posting-enrichment-api` |
 
 ## Install all three in one MCP client
 
@@ -47,6 +48,7 @@ Import any workflow from a companion repo, set `APIFY_TOKEN` in the n8n environm
 - [flashscore-tennis-stats-api-n8n-mcp](https://github.com/structlabs-hq/flashscore-tennis-stats-api-n8n-mcp) — Flashscore tennis results with per-set and match stats
 - [producthunt-launch-intelligence-api-n8n-mcp](https://github.com/structlabs-hq/producthunt-launch-intelligence-api-n8n-mcp) — Product Hunt rows with n8n workflow and MCP config
 - [twitch-live-stream-analytics-api-n8n-mcp](https://github.com/structlabs-hq/twitch-live-stream-analytics-api-n8n-mcp) — Twitch rows with n8n workflow and MCP config
+- [job-posting-enrichment-api-n8n-mcp](https://github.com/structlabs-hq/job-posting-enrichment-api-n8n-mcp) — ATS postings with company domain, function, seniority and hiring velocity
 
 ## License
 

@@ -62,5 +62,11 @@
     "workflow": "https://github.com/structlabs-hq/twitch-live-stream-analytics-api-n8n-mcp/blob/main/n8n/twitch-live-stream-analytics-api-workflow.json",
     "repo": "https://github.com/structlabs-hq/twitch-live-stream-analytics-api-n8n-mcp",
     "store": "https://apify.com/structlabs/twitch-live-stream-analytics-api"
+  },
+  "job-posting-enrichment-api": {
+    "actor": "structlabs/job-posting-enrichment-api",
+    "workflow": "https://github.com/structlabs-hq/job-posting-enrichment-api-n8n-mcp/blob/main/n8n/job-posting-enrichment-api-workflow.json",
+    "repo": "https://github.com/structlabs-hq/job-posting-enrichment-api-n8n-mcp",
+    "store": "https://apify.com/structlabs/job-posting-enrichment-api"
   }
 }
